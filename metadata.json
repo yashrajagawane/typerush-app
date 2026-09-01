@@ -1,0 +1,6 @@
+{
+  "name": "TypeRush",
+  "description": "Learn. Type. Improve. Rush. A highly engaging typing-speed learning game.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
