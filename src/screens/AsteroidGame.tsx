@@ -275,7 +275,7 @@ export function AsteroidGame({ navigate }: { navigate: (screen: Screen) => void 
   }, [gameState.gameOver]);
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col h-full relative" onClick={() => inputRef.current?.focus()}>
+    <div className="w-full max-w-7xl mx-auto flex flex-col h-full relative" onClick={() => inputRef.current?.focus()}>
       <div className="flex justify-between items-center mb-6 relative z-10">
         <button onClick={() => navigate('games')} className="text-gray-400 hover:text-white transition-colors">
           ← Back to Games

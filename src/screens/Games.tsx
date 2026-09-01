@@ -50,7 +50,7 @@ export function GamesScreen({ navigate }: { navigate: (screen: Screen) => void }
   ];
 
   return (
-    <div className="max-w-5xl mx-auto space-y-8 pb-20 md:pb-0 h-full flex flex-col">
+    <div className="w-full max-w-7xl mx-auto space-y-8 pb-20 md:pb-0 h-full flex flex-col">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-white mb-2">Arcade Games</h1>

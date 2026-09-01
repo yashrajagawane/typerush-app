@@ -117,7 +117,7 @@ export function RaceGame({ navigate }: { navigate: (screen: Screen) => void }) {
   }
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col h-full relative" onClick={() => inputRef.current?.focus()}>
+    <div className="w-full max-w-7xl mx-auto flex flex-col h-full relative" onClick={() => inputRef.current?.focus()}>
       <div className="flex justify-between items-center absolute -top-4 -left-4 w-[calc(100%+2rem)] z-10 pr-4">
         <button onClick={() => navigate('games')} className="text-gray-400 hover:text-white flex items-center gap-2 text-sm">
           ← Back

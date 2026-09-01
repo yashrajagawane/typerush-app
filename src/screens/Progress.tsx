@@ -32,7 +32,7 @@ export function ProgressScreen({ navigate }: { navigate: (screen: Screen) => voi
   const worstKeys = getWorstKeys();
 
   return (
-    <div className="max-w-5xl mx-auto space-y-8 pb-20 md:pb-0">
+    <div className="w-full max-w-7xl mx-auto space-y-8 pb-20 md:pb-0">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-white mb-2">Performance</h1>

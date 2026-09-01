@@ -228,7 +228,7 @@ export function MatrixGame({ navigate }: { navigate: (screen: Screen) => void })
   };
 
   return (
-    <div className="max-w-5xl mx-auto h-full flex flex-col pt-8 pb-20 md:pb-8 relative font-mono">
+    <div className="w-full max-w-7xl mx-auto h-full flex flex-col pb-4 relative font-mono">
       <div className="flex justify-between items-center mb-8 px-4">
         <div>
           <h1 className="text-3xl font-bold text-emerald-400 mb-2 drop-shadow-[0_0_10px_rgba(52,211,153,0.5)] flex items-center gap-2">

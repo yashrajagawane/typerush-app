@@ -65,7 +65,7 @@ export default function App() {
   return (
     <div className="h-screen overflow-hidden bg-[#0a0a0c] text-white flex flex-col md:flex-row selection:bg-purple-500/30">
       <Navigation currentScreen={currentScreen} setCurrentScreen={setCurrentScreen} />
-      <main className="flex-1 overflow-y-auto p-4 md:p-8 relative">
+      <main className="flex-1 overflow-y-auto p-4 relative">
         {/* Subtle background glow */}
         <div className="fixed top-1/4 left-1/4 w-96 h-96 bg-purple-900/20 rounded-full blur-[120px] pointer-events-none" />
         <div className="fixed bottom-1/4 right-1/4 w-96 h-96 bg-indigo-900/20 rounded-full blur-[120px] pointer-events-none" />

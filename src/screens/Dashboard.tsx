@@ -21,7 +21,7 @@ export function Dashboard({ navigate }: { navigate: (screen: Screen) => void }) 
   ];
 
   return (
-    <div className="max-w-5xl mx-auto space-y-8 pb-20 md:pb-0">
+    <div className="w-full max-w-7xl mx-auto space-y-8 pb-20 md:pb-0">
       <CssFireworks active={stats.lastDailyChallenge === new Date().toDateString()} />
       
       {/* Header Profile Section */}

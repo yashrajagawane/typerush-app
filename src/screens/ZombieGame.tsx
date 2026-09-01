@@ -266,7 +266,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
 
   return (
     <div 
-      className="max-w-5xl mx-auto h-full flex flex-col pt-8 pb-20 md:pb-8 relative"
+      className="w-full h-full flex flex-col pb-4 relative"
       onClick={focusInput}
     >
       <input
@@ -282,10 +282,10 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
         spellCheck="false"
       />
       
-      <div className="flex justify-between items-center mb-8 px-4">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4 px-4">
         <div>
-          <h1 className="text-3xl font-bold text-white mb-2">Zombie Defense</h1>
-          <p className="text-gray-400">Type words to shoot. Don't let them reach you!</p>
+          <h1 className="text-2xl font-bold text-white mb-1">Zombie Defense</h1>
+          <p className="text-gray-400 text-sm">Type words to shoot. Don't let them reach you!</p>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
@@ -388,7 +388,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
                   className="absolute"
                   style={{
                     left: `${z.x}%`,
-                    top: `${10 + (z.lane * 15)}%`,
+                    top: `${5 + (z.lane * 14)}%`,
                   }}
                 >
                   <div className={cn(
@@ -424,15 +424,15 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="bg-slate-900 border border-slate-700 p-8 rounded-3xl text-center max-w-md w-full mx-4 shadow-2xl"
+              className="bg-slate-900 border border-slate-700 p-6 rounded-3xl text-center max-w-md w-full mx-4 shadow-2xl"
             >
-              <Skull className="w-20 h-20 text-red-500 mx-auto mb-6" />
-              <h2 className="text-4xl font-black text-white mb-2">Overrun!</h2>
-              <p className="text-slate-400 mb-8 text-lg">The horde broke through your defenses.</p>
+              <Skull className="w-12 h-12 text-red-500 mx-auto mb-2" />
+              <h2 className="text-3xl font-black text-white mb-2">Overrun!</h2>
+              <p className="text-slate-400 mb-4 text-base">The horde broke through your defenses.</p>
               
-              <div className="bg-black/50 rounded-2xl p-6 mb-8 border border-white/5">
-                <div className="text-sm text-slate-400 uppercase tracking-widest font-bold mb-1">Final Score</div>
-                <div className="text-5xl font-black text-white mb-4">{gameState.score}</div>
+              <div className="bg-black/50 rounded-2xl p-4 mb-4 border border-white/5">
+                <div className="text-xs text-slate-400 uppercase tracking-widest font-bold mb-1">Final Score</div>
+                <div className="text-4xl font-black text-white mb-4">{gameState.score}</div>
                 
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-400">Waves Survived:</span>
@@ -445,7 +445,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
                   e.stopPropagation();
                   handleRestart();
                 }}
-                className="w-full py-4 bg-red-600 hover:bg-red-500 text-white rounded-xl font-bold text-lg transition-colors shadow-[0_0_20px_rgba(220,38,38,0.3)]"
+                className="w-full py-3 bg-red-600 hover:bg-red-500 text-white rounded-xl font-bold text-lg transition-colors shadow-[0_0_20px_rgba(220,38,38,0.3)]"
               >
                 Try Again
               </button>
