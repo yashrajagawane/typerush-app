@@ -388,6 +388,136 @@ export const LESSONS: Lesson[] = [
       '"To be, or not to be, that is the question: Whether \'tis nobler in the mind to suffer..."',
       'Congratulations! You have mastered the keyboard. Onward to new challenges! 🚀'
     ]
+  },
+  {
+    id: 'lesson-31',
+    level: 31,
+    title: 'Advanced Coding: React Hooks',
+    description: 'Type common React Hook patterns with precision.',
+    targetKeys: ['[', ']', '{', '}', '=', '>'],
+    exercises: [
+      'const [state, setState] = useState(initialState);',
+      'useEffect(() => { document.title = `You clicked ${count} times`; }, [count]);',
+      'const value = useContext(MyContext);',
+      'const memoizedCallback = useCallback(() => { doSomething(a, b); }, [a, b]);'
+    ]
+  },
+  {
+    id: 'lesson-32',
+    level: 32,
+    title: 'Difficult Punctuation Mix',
+    description: 'Test your accuracy with chaotic symbols.',
+    targetKeys: ['^', '&', '*', '(', ')', '%', '$'],
+    exercises: [
+      'Cost: $45.99 (including 8.5% tax) & shipping!',
+      'What happens if x^2 + y^2 = z^2 ?',
+      'Email me at test.user_99@example-domain.com.',
+      'function(a,b) { return (a && b) || (!a && !b); }'
+    ]
+  },
+  {
+    id: 'lesson-33',
+    level: 33,
+    title: 'Speed Burst: Short Words',
+    description: 'Push your WPM to the absolute max with short, fast words.',
+    targetKeys: [],
+    exercises: [
+      'the and for are but not you all any can',
+      'had has was one our out day get has him',
+      'his how man new now old see two way who',
+      'boy did its let put say too use dad mom'
+    ]
+  },
+  {
+    id: 'lesson-34',
+    level: 34,
+    title: 'Classic Poetry',
+    description: 'Practice rhythm and pacing with famous poetic lines.',
+    targetKeys: [],
+    exercises: [
+      'Once upon a midnight dreary, while I pondered, weak and weary,',
+      'Two roads diverged in a yellow wood,',
+      'Because I could not stop for Death \u2013 He kindly stopped for me \u2013',
+      'Do not go gentle into that good night.'
+    ]
+  },
+  {
+    id: 'lesson-35',
+    level: 35,
+    title: 'Regex Mastery',
+    description: 'Type complex Regular Expressions.',
+    targetKeys: ['\\', '^', '$', '*', '+', '?', '.'],
+    exercises: [
+      '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$',
+      '\\b[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}\\b',
+      '^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$',
+      '<\\/?\\w+((\\s+\\w+(\\s*=\\s*(?:".*?"|\'.*?\'|[^\'">\\s]+))?)+\\s*|\\s*)\\/?>'
+    ]
+  },
+  {
+    id: 'lesson-36',
+    level: 36,
+    title: 'Complex Legal Terms',
+    description: 'Navigate long, formal vocabulary.',
+    targetKeys: [],
+    exercises: [
+      'subpoena duces tecum habeas corpus',
+      'amicus curiae force majeure caveat emptor',
+      'jurisprudence fiduciary indemnification',
+      'mens rea pro bono publico quid pro quo'
+    ]
+  },
+  {
+    id: 'lesson-37',
+    level: 37,
+    title: 'Advanced Markdown',
+    description: 'Type markdown formatting rules quickly.',
+    targetKeys: ['#', '*', '_', '`', '~'],
+    exercises: [
+      '### This is a Level 3 Heading',
+      '**Bold text** and *italic text* or _italic_',
+      '~~Strikethrough~~ and `inline code` blocks',
+      '[Link Text](https://www.example.com "Hover Title")'
+    ]
+  },
+  {
+    id: 'lesson-38',
+    level: 38,
+    title: 'Extreme Alternating Hands',
+    description: 'Highly complex words requiring strict left-right alternation.',
+    targetKeys: [],
+    exercises: [
+      'dismantlement proficiency',
+      'authenticity isomorphism',
+      'skeptical panentheism',
+      'glandular neurotoxin'
+    ]
+  },
+  {
+    id: 'lesson-39',
+    level: 39,
+    title: 'Awkward Reaches',
+    description: 'Practice difficult stretches for the pinky and ring fingers.',
+    targetKeys: ['p', 'q', 'z', '/', '-', '='],
+    exercises: [
+      'pizza puzzle quartz queue',
+      'zookeeper maximize equip squeeze',
+      'p=q/z - x=y/w + a=b/c',
+      'zephyr xylophone plucky quizzical'
+    ]
+  },
+  {
+    id: 'lesson-40',
+    level: 40,
+    title: 'The True Apex',
+    description: 'The absolute pinnacle of typing. Complex sentences, heavy punctuation, and numbers.',
+    targetKeys: [],
+    exercises: [
+      'In 1969, Apollo 11 landed on the moon; Neil Armstrong said, "That\'s one small step for man..."',
+      'const apex = [1, 2, 3].reduce((acc, val) => acc + val, 0); // 6',
+      'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+      'You are a true Typing Legend. Your fingers dance across the keys. 🎉🏆'
+    ]
   }
 ];
 
