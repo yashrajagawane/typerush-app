@@ -31,7 +31,7 @@ export function RaceGame({ navigate }: { navigate: (screen: Screen) => void }) {
 
   // AI progression
   useEffect(() => {
-    if (state.status === 'running' && aiProgress < 1) {
+    if (state.status === 'running') {
       const currentAiSpeed = difficulty === 'easy' ? 35 : difficulty === 'medium' ? 55 : 80;
       const interval = setInterval(() => {
         setAiProgress(prev => {
@@ -44,7 +44,7 @@ export function RaceGame({ navigate }: { navigate: (screen: Screen) => void }) {
       }, 100);
       return () => clearInterval(interval);
     }
-  }, [state.status, aiProgress, difficulty]);
+  }, [state.status, difficulty]);
 
   // Keep input focused
   useEffect(() => {

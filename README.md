@@ -14,7 +14,7 @@ TypeRush is not just a standard typing test—it's an interactive arcade experie
 ## ✨ Key Features
 
 *   **🎮 Arcade Minigames:** Practice under pressure! Survive the horde in *Zombie Defense*, dodge space debris in *Asteroid Runner*, type code in *Matrix Mode*, or speed through the *Race Game*.
-*   **📚 40 Progressive Lessons:** Journey from basic home-row keystrokes all the way up to advanced React Hooks, Regex, and complex punctuation.
+*   **📚 50 Progressive Lessons:** Journey from basic home-row keystrokes all the way up to advanced React Hooks, Regex, and complex punctuation.
 *   **🏆 Daily Challenges:** Form a habit with unique daily quotes and build your typing streak.
 *   **📊 Advanced Analytics:** Track your WPM, accuracy, total characters typed, and unlock achievements as you level up.
 *   **🔊 Immersive Audio:** High-quality sound effects provide satisfying feedback for keystrokes, errors, and game events.
@@ -68,7 +68,7 @@ Here is a quick overview of the core file structure to help you navigate the cod
  ┃ ┃ ┗ 📜 audio.ts           # Sound effect synthesizers
  ┃ ┣ 📂 screens/           # Main application views
  ┃ ┃ ┣ 📜 Dashboard.tsx      # Main hub
- ┃ ┃ ┣ 📜 Lessons.tsx        # 40-level progression screen
+ ┃ ┃ ┣ 📜 Lessons.tsx        # 50-level progression screen
  ┃ ┃ ┣ 📜 Games.tsx          # Arcade game selector
  ┃ ┃ ┣ 📜 ZombieGame.tsx     # Zombie survival typing minigame
  ┃ ┃ ┣ 📜 AsteroidGame.tsx   # Asteroid dodging minigame

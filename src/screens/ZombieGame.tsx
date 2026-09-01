@@ -50,6 +50,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
   }, []);
 
   useEffect(() => {
+    if (gameState.gameOver) return;
     let animationFrameId: number;
     let lastTime = performance.now();
     let spawnTimer = 0;
@@ -125,7 +126,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
 
     animationFrameId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(animationFrameId);
-  }, [difficulty]);
+  }, [difficulty, gameState.gameOver]);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -388,7 +389,7 @@ export function ZombieGame({ navigate }: { navigate: (screen: Screen) => void })
                   className="absolute"
                   style={{
                     left: `${z.x}%`,
-                    top: `${5 + (z.lane * 14)}%`,
+                    top: `${4 + (z.lane * 12)}%`,
                   }}
                 >
                   <div className={cn(

@@ -48,6 +48,7 @@ export function MatrixGame({ navigate }: { navigate: (screen: Screen) => void })
   }, []);
 
   useEffect(() => {
+    if (gameState.gameOver) return;
     let animationFrameId: number;
     let lastTime = performance.now();
     let spawnTimer = 0;
@@ -122,7 +123,7 @@ export function MatrixGame({ navigate }: { navigate: (screen: Screen) => void })
 
     animationFrameId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+  }, [gameState.gameOver]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

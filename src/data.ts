@@ -518,6 +518,136 @@ export const LESSONS: Lesson[] = [
       'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
       'You are a true Typing Legend. Your fingers dance across the keys. 🎉🏆'
     ]
+  },
+  {
+    id: 'lesson-41',
+    level: 41,
+    title: 'Hex Codes & Colors',
+    description: 'Type hexadecimal color codes and RGBA values quickly.',
+    targetKeys: ['#', 'a', 'b', 'c', 'd', 'e', 'f', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+    exercises: [
+      'color: #ff0000; background: #1a1a1a;',
+      'box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);',
+      'const primary = "#4f46e5"; const secondary = "#10b981";',
+      'border-color: transparent transparent #333 transparent;'
+    ]
+  },
+  {
+    id: 'lesson-42',
+    level: 42,
+    title: 'URL Parameters & Endpoints',
+    description: 'Practice typing complex URLs, query strings, and API endpoints.',
+    targetKeys: ['?', '&', '=', '/', '-', '_'],
+    exercises: [
+      'https://api.example.com/v1/users?sort=desc&limit=50',
+      'fetch(`/api/posts/${postId}/comments?page=${page}`)',
+      'window.location.href = "https://app.typerush.com/dashboard";',
+      'wss://stream.binance.com:9443/ws/btcusdt@kline_1m'
+    ]
+  },
+  {
+    id: 'lesson-43',
+    level: 43,
+    title: 'CSS Grid & Flexbox',
+    description: 'Complex layout syntax requiring numbers and hyphenated words.',
+    targetKeys: ['-'],
+    exercises: [
+      'display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));',
+      'justify-content: space-between; align-items: center;',
+      'flex: 1 1 auto; flex-direction: column-reverse;',
+      'grid-column: 1 / -1; align-self: flex-start;'
+    ]
+  },
+  {
+    id: 'lesson-44',
+    level: 44,
+    title: 'TypeScript Generics',
+    description: 'Advanced TypeScript syntax focusing on angle brackets and unions.',
+    targetKeys: ['<', '>', '|', '&'],
+    exercises: [
+      'type Partial<T> = { [P in keyof T]?: T[P]; };',
+      'function map<T, U>(arr: T[], fn: (arg: T) => U): U[]',
+      'const data: Record<string, ReadonlyArray<number>> = {};',
+      'type Status = "idle" | "loading" | "success" | "error";'
+    ]
+  },
+  {
+    id: 'lesson-45',
+    level: 45,
+    title: 'Docker & YAML',
+    description: 'Configuration file syntax with strict spacing and capitalization.',
+    targetKeys: [':', '-', '.'],
+    exercises: [
+      'FROM node:18-alpine AS builder',
+      'RUN npm ci --only=production',
+      'services: db: image: postgres:15 ports: - "5432:5432"',
+      'volumes: postgres_data: driver: local'
+    ]
+  },
+  {
+    id: 'lesson-46',
+    level: 46,
+    title: 'IPv4 & IPv6 Addresses',
+    description: 'A barrage of numbers and colons.',
+    targetKeys: ['.', ':'],
+    exercises: [
+      '192.168.1.1 255.255.255.0 10.0.0.1',
+      '2001:0db8:85a3:0000:0000:8a2e:0370:7334',
+      'fe80::1ff:fe23:4567:890a%eth2',
+      '127.0.0.1 localhost ::1'
+    ]
+  },
+  {
+    id: 'lesson-47',
+    level: 47,
+    title: 'Base64 & Hashes',
+    description: 'Simulated hashes to test pure random keystroke accuracy.',
+    targetKeys: [],
+    exercises: [
+      'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+      'V2VsY29tZSB0byBUeXBlUnVzaCBMZXZlbCA0NyE=',
+      '$2a$12$R9h/cIPz0gi.URNNX3rubedAK0O8xAALBmq',
+      '0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5'
+    ]
+  },
+  {
+    id: 'lesson-48',
+    level: 48,
+    title: 'The Longest Words',
+    description: 'Extremely long English words to test your stamina.',
+    targetKeys: [],
+    exercises: [
+      'pneumonoultramicroscopicsilicovolcanoconiosis',
+      'hippopotomonstrosesquippedaliophobia',
+      'supercalifragilisticexpialidocious',
+      'pseudopseudohypoparathyroidism'
+    ]
+  },
+  {
+    id: 'lesson-49',
+    level: 49,
+    title: 'Obfuscated Code',
+    description: 'Hard-to-read syntax that will force you to read character by character.',
+    targetKeys: [],
+    exercises: [
+      '(![]+[])[+[]]+(![]+[])[+!+[]]+([![]]+[][[]])[+!+[]+[+[]]]',
+      'return (a, b) => a > b ? 1 : a < b ? -1 : 0;',
+      '[...Array(10)].map((_, i) => i * i).filter(n => n % 2 === 0)',
+      'x => x.replace(/[a-zA-Z]/g, c => String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26))'
+    ]
+  },
+  {
+    id: 'lesson-50',
+    level: 50,
+    title: 'The Grandmaster Apex',
+    description: 'The final challenge. A culmination of speed, code, symbols, and endurance.',
+    targetKeys: [],
+    exercises: [
+      'You have reached the end of the line. Few make it this far. Your fingers are absolute lightning.',
+      'const MASTER_KEY = "TYPERUSH_GOD_MODE_UNLOCKED"; let wpm = Infinity;',
+      'From a to z, 0 to 9, ! to ?, you have conquered every key on this board.',
+      'Take a bow, Grandmaster. You have beaten TypeRush. 🏆👑🔥'
+    ]
   }
 ];
 
